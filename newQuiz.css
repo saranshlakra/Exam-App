@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.DivTop {
+  /* background-color: #def2f1; */
+  height: 10vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(img2_2.jpg);
+}
+
+.DivTop_1 {
+  position: absolute;
+  border-radius: 8px;
+  background-color: #28b9b5;
+  height: 7.5vh;
+  width: 20vw;
+  /* margin-left: 5%; */
+  /* margin-bottom: -4px; */
+  transform: translate(10%, 16%);
+}
+
+#candidateID {
+  transform: translate(2vw, 2.5vh);
+}
+
+.DivTop_2 {
+  right: 5.8%;
+  border-radius: 8px;
+  position: absolute;
+  background-color: #28b9b5;
+  height: 7.5vh;
+  width: 10vw;
+  /* margin-left: 5%; */
+  /* margin-bottom: -4px; */
+  transform: translate(10%, 16%);
+}
+
+#Timer {
+  font-size: small;
+  margin: 8px;
+  color: red;
+}
+
+#Result_div {
+  width: 48vw;
+  transform: translate(26vw, 15vh);
+  height: 38vh;
+  background-color: #84ce90ce;
+  border-radius: 8px;
+}
+
+#Score {
+  transform: translate(14vw, 12vh);
+  font-size: larger;
+}
+
+#Thanks {
+  transform: translate(14vw, 15vh);
+  font-size: x-large;
+}
+.DivMiddle {
+  margin-bottom: 10px;
+  height: max-content;
+  background-color: rgba(245, 245, 245, 0.884);
+}
+
+.Result_div {
+  border-radius: 8px;
+  padding: 6px;
+  position: absolute;
+  background: #84ce90ce;
+  width: 92.8vw;
+  margin-left: 2.4vw;
+  margin-top: -1px;
+}
+
+#submitQuiz {
+  width: 94vw;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 0;
+  transform: translate(2.5vw, 4px);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 6vh;
+}
+
+#submitQuiz:hover {
+  background-color: #45a049;
+}
+
+#Exit {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 5vh;
+  transform: translate(40vw, 20vh);
+  width: 5vw;
+}
+
+#Exit:hover {
+  background-color: #45a049;
+}
+
+.Ques_div {
+  border-radius: 8px;
+  width: 94vw;
+  display: inline-block;
+  background-color: #84ce90ce;
+  height: 30vh;
+  margin-left: 2.5%;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.Ques {
+  margin-left: 10px;
+  line-height: 2em;
+  font-size: 22px;
+}
+
+.checkBox_div {
+  float: right;
+  height: 20vh;
+  width: 2vw;
+  margin-right: 34px;
+}
+
+.myCheck {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.Option {
+  font-size: 18px;
+  margin-left: 10px;
+  line-height: 2em;
+}
+
+.clear_btn {
+  float: right;
+  width: 6vw;
+  background-color: #4caf3e;
+  color: white;
+  padding: 6px 0;
+  margin-right: 1vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -36px;
+  height: 4vh;
+}
+.clear_btn:hover {
+  background-color: #45a049;
+}
+.Ques_div:hover {
+  background-color: #97d49a;
+}
+
+.DivLower {
+  margin-bottom: 1px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(img1.jpg); */
+  height: 89.9vh;
+  background-color: #f2f2f2e8;
+}
+
+.login_div {
+  position: absolute;
+  width: 40vw;
+  /* background-color: #f2f2f279;7 */
+  height: 40vh;
+  transform: translate(30vw, 12vh);
+}
+
+#ID {
+  display: inline-block;
+  margin-top: 12%;
+  font-size: 22px;
+  margin-left: 10%;
+}
+
+#password {
+  display: inline-block;
+  margin-top: 6%;
+  font-size: 22px;
+  margin-left: 10%;
+}
+
+#idBox {
+  margin-left: 4vw;
+  margin-top: 9vh;
+  height: 40px;
+  width: 30vw;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#passwordBox {
+  margin-left: 4vw;
+  margin-top: 3vh;
+  height: 40px;
+  width: 30vw;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 30vw;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 0;
+  margin-left: 4vw;
+  margin-top: 2vh;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 6vh;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+input[type="text"]:hover {
+  border: 1.8px solid #28b9b5 !important;
+}
+input[type="password"]:hover {
+  border: 1.8px solid #cde7e6 !important;
+}
+
+#detailsDiv {
+  border-radius: 8px;
+  position: absolute;
+  width: 43vw;
+  border: 1px solid #45a049 !important;
+  background-color: #f2f2f2e8;
+  height: 42vh;
+  transform: translate(28vw, 12vh);
+}
+
+#loginID {
+  transform: translate(4vw, 4vh);
+  position: absolute;
+  font-size: larger;
+  color: #45a049;
+}
+
+#quizInst {
+  position: absolute;
+  transform: translate(15vw, 10px);
+}
+
+.Instructions {
+  transform: translate(10px, 5vh);
+  font-weight: 100;
+  line-height: 1em;
+  font-size: medium;
+  margin-top: 24px;
+  margin-left: 10px;
+}
+
+#start {
+  float: right;
+  width: 10vw;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 0;
+  margin-right: 1vw;
+  margin-top: 4vh;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 6vh;
+}
+
+#start:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .login_div {
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    transform: translate(10vw, 12vh);
+  }
+
+  #idBox {
+    width: 70vw;
+  }
+
+  #passwordBox {
+    width: 70vw;
+  }
+
+  input[type="submit"] {
+    width: 70vw;
+  }
+
+  .Instructions {
+    font-weight: 100;
+    line-height: 1em;
+    font-size: medium;
+    margin-top: 20px;
+    margin-left: 10px;
+    transform: translate(0px, 38px);
+  }
+
+  #detailsDiv {
+    border-radius: 8px;
+    position: absolute;
+    width: 96vw;
+    border: 1px solid #45a049 !important;
+    background-color: #f2f2f2e8;
+    height: fit-content;
+    transform: translate(2vw, 12vh);
+  }
+
+  #quizInst {
+    transform: translate(22vw, 10px);
+  }
+  #start {
+    float: right;
+    width: 22vw;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 0;
+    margin-right: 2vw;
+    margin-top: 8vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 6vh;
+    margin-bottom: 2vh;
+  }
+  .DivTop_1 {
+    position: absolute;
+    border-radius: 8px;
+    background-color: #28b9b5;
+    height: 7.5vh;
+    width: 60vw;
+    transform: translate(5%, 16%);
+  }
+
+  .DivTop_2 {
+    right: 6.8%;
+    width: 22vw;
+  }
+
+  #Timer {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 2px;
+  }
+
+  .Ques_div {
+    width: 96vw;
+    height: 36vh;
+    margin-left: 2%;
+  }
+
+  .Ques {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .Option {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1em;
+  }
+  .checkBox_div {
+    margin-top: 2px;
+    line-height: 24px;
+    width: 2vw;
+    margin-right: 22px;
+  }
+
+  .clear_btn {
+    transform: translate(0, 30vh);
+    width: 20vw;
+  }
+  .longQues {
+    height: 40.5vh;
+  }
+  #submitQuiz {
+    width: 96vw;
+    transform: translate(2vw, 4px);
+  }
+  #Thanks {
+    position: absolute;
+    transform: translate(8vw, 10vh);
+    font-size: x-large;
+    line-height: 2em;
+  }
+  #Score {
+    position: absolute;
+    transform: translate(8vw, 6vh);
+    font-size: x-large;
+  }
+  #Result_div {
+    height: 34vh;
+    width: 94vw;
+    transform: translate(3vw, 15vh);
+  }
+  #Exit {
+    transform: translate(2vw, 27.5vh);
+    width: 90vw;
+  }
+}

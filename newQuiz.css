@@ -451,6 +451,7 @@ input[type="password"]:hover {
 @media (max-width: 320px) {
   .Ques_div {
     height: 40.5vh;
+    display: block;
   }
   .longQues {
     height: 40.5vh;

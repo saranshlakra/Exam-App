@@ -19,9 +19,11 @@
 .DivTop_1 {
   position: absolute;
   border-radius: 8px;
-  background-color: cornflowerblue;
+  background-color: #28b9b5;
   height: 7.5vh;
   width: 20vw;
+  /* margin-left: 5%; */
+  /* margin-bottom: -4px; */
   transform: translate(10%, 16%);
 }
 
@@ -33,7 +35,7 @@
   right: 5.8%;
   border-radius: 8px;
   position: absolute;
-  background-color: cornflowerblue;
+  background-color: #28b9b5;
   height: 7.5vh;
   width: 10vw;
   /* margin-left: 5%; */
@@ -51,7 +53,7 @@
   width: 48vw;
   transform: translate(26vw, 15vh);
   height: 38vh;
-  background-color: lightblue;
+  background-color: #84ce90ce;
   border-radius: 8px;
 }
 
@@ -82,7 +84,7 @@
 
 #submitQuiz {
   width: 94vw;
-  background-color: cornflowerblue;
+  background-color: #4caf50;
   color: white;
   padding: 8px 0;
   transform: translate(2.5vw, 4px);
@@ -93,11 +95,11 @@
 }
 
 #submitQuiz:hover {
-  background-color: dodgerblue;
+  background-color: #45a049;
 }
 
 #Exit {
-  background-color: cornflowerblue;
+  background-color: #4caf50;
   color: white;
   padding: 8px 0px;
   border: none;
@@ -109,14 +111,14 @@
 }
 
 #Exit:hover {
-  background-color: dodgerblue;
+  background-color: #45a049;
 }
 
 .Ques_div {
   border-radius: 8px;
   width: 94vw;
   display: inline-block;
-  background-color: #dce2db;
+  background-color: #dce2e4;
   height: 30vh;
   margin-left: 2.5%;
   margin-top: 2px;
@@ -150,7 +152,7 @@
 .clear_btn {
   float: right;
   width: 6vw;
-  background-color: cornflowerblue;
+  background-color: #4caf3e;
   color: white;
   padding: 6px 0;
   margin-right: 1vw;
@@ -161,10 +163,10 @@
   height: 4vh;
 }
 .clear_btn:hover {
-  background-color: dodgerblue;
+  background-color: #45a049;
 }
 .Ques_div:hover {
-  background-color: lightblue;
+  background-color: #97d49a;
 }
 
 .DivLower {
@@ -223,7 +225,7 @@
 
 input[type="submit"] {
   width: 30vw;
-  background-color: dodgerblue;
+  background-color: #4caf50;
   color: white;
   padding: 8px 0;
   margin-left: 4vw;
@@ -235,20 +237,20 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: cornflowerblue;
+  background-color: #45a049;
 }
 input[type="text"]:hover {
-  border: 1.8px solid cornflowerblue !important;
+  border: 1.8px solid #28b9b5 !important;
 }
 input[type="password"]:hover {
-  border: 1.8px solid cornflowerblue !important;
+  border: 1.8px solid #cde7e6 !important;
 }
 
 #detailsDiv {
   border-radius: 8px;
   position: absolute;
   width: 43vw;
-  border: 1px solid dodgerblue !important;
+  border: 1px solid #45a049 !important;
   background-color: #f2f2f2e8;
   height: 42vh;
   transform: translate(28vw, 12vh);
@@ -258,7 +260,7 @@ input[type="password"]:hover {
   transform: translate(4vw, 4vh);
   position: absolute;
   font-size: larger;
-  color: dodgerblue;
+  color: #45a049;
 }
 
 #quizInst {
@@ -278,11 +280,11 @@ input[type="password"]:hover {
 #start {
   float: right;
   width: 10vw;
-  background-color: dodgerblue;
+  background-color: #4caf50;
   color: white;
   padding: 8px 0;
   margin-right: 1vw;
-  margin-top: 8vh;
+  margin-top: 4vh;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -290,7 +292,7 @@ input[type="password"]:hover {
 }
 
 #start:hover {
-  background-color: cornflowerblue;
+  background-color: #45a049;
 }
 
 @media (max-width: 480px) {
@@ -326,7 +328,7 @@ input[type="password"]:hover {
     border-radius: 8px;
     position: absolute;
     width: 96vw;
-    border: 1px solid dodgerblue !important;
+    border: 1px solid #45a049 !important;
     background-color: #f2f2f2e8;
     height: fit-content;
     transform: translate(2vw, 12vh);
@@ -338,7 +340,7 @@ input[type="password"]:hover {
   #start {
     float: right;
     width: 22vw;
-    background-color: dodgerblue;
+    background-color: #4caf50;
     color: white;
     padding: 8px 0;
     margin-right: 2vw;
@@ -349,14 +351,10 @@ input[type="password"]:hover {
     height: 6vh;
     margin-bottom: 2vh;
   }
-
-  #start:hover {
-    background-color: cornflowerblue;
-  }
   .DivTop_1 {
     position: absolute;
     border-radius: 8px;
-    background-color: cornflowerblue;
+    background-color: #28b9b5;
     height: 7.5vh;
     width: 60vw;
     transform: translate(5%, 16%);
@@ -375,7 +373,7 @@ input[type="password"]:hover {
 
   .Ques_div {
     width: 96vw;
-    height: 41vh;
+    height: 36vh;
     margin-left: 2%;
   }
 
@@ -408,13 +406,13 @@ input[type="password"]:hover {
   }
   #Thanks {
     position: absolute;
-    transform: translate(4vw, 10vh);
+    transform: translate(8vw, 10vh);
     font-size: x-large;
     line-height: 2em;
   }
   #Score {
     position: absolute;
-    transform: translate(10vw, 6vh);
+    transform: translate(8vw, 6vh);
     font-size: x-large;
   }
   #Result_div {
@@ -425,17 +423,5 @@ input[type="password"]:hover {
   #Exit {
     transform: translate(2vw, 27.5vh);
     width: 90vw;
-  }
-  .shortQues {
-    height: 36.5vh;
-  }
-  input[type="submit"]:hover {
-    background-color: cornflowerblue;
-  }
-  input[type="text"]:hover {
-    border: 1.8px solid cornflowerblue !important;
-  }
-  input[type="password"]:hover {
-    border: 1.8px solid cornflowerblue !important;
   }
 }

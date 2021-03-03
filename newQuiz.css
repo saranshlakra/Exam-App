@@ -375,7 +375,7 @@ input[type="password"]:hover {
 
   .Ques_div {
     width: 96vw;
-    height: 38vh;
+    height: 33vh;
     margin-left: 2%;
   }
 
@@ -400,7 +400,7 @@ input[type="password"]:hover {
     width: 20vw;
   }
   .longQues {
-    height: 43.2vh;
+    height: 33.2vh;
   }
   #submitQuiz {
     width: 96vw;
@@ -490,6 +490,18 @@ input[type="password"]:hover {
   }
   .Ques_ip8plus {
     height: 30.6vh;
+  }
+  .clear_btn {
+    transform: translate(7.5vw, 2vh);
+  }
+}
+
+@media (width: 411px) {
+  .Ques_div {
+    height: 30.8vh;
+  }
+  .longQues {
+    height: 35vh;
   }
   .clear_btn {
     transform: translate(7.5vw, 2vh);

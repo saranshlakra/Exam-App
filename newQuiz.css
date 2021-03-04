@@ -124,12 +124,12 @@
 }
 
 .Ques {
-  margin-left: 2vw;
+  margin-left: 1vw;
   line-height: 2em;
   font-size: 22px;
 }
 .Div_new_question {
-  width: 95vw;
+  width: 100%;
 }
 
 .checkBox_div {
@@ -387,7 +387,7 @@ input[type="password"]:hover {
   }
 
   .Ques {
-    margin-top: 8px;
+    margin-top: 2vw;
     font-size: 2vh;
   }
   .Option {

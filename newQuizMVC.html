@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="newQuiz.css" />
+
+  <title>Online Quiz</title>
+</head>
+
+<body style="background-color: aliceblue">
+  <div class="DivTop">
+    <div class="DivTop_1">
+      <p id="candidateID">Candidate ID: 8860******</p>
+    </div>
+    <div class="DivTop_2">
+      <p id="Timer">00:50</p>
+    </div>
+  </div>
+  <div id="Result_div">
+    <!-- <p id="Score">You scored %____% out of 10.</p> -->
+    <p id="Thanks">Thank you and all the best..</p>
+    <button id="Exit">Exit</button>
+  </div>
+  <div class="DivMiddle">
+    <div>
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <p class="Ques">1: The ph of lemon juice is expected to be?</p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: 10</p>
+          <p class="Option">B: Nothing can be predicted</p>
+          <p class="Option">C: More than 7</p>
+          <p class="Option">D: Less than 7</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub1" id="1" name="Ques_1" value="A1" />
+          <input type="radio" class="myCheck sub1" id="2" name="Ques_1" value="B1" />
+          <input type="radio" class="myCheck sub1" id="3" name="Ques_1" value="C1" />
+          <input type="radio" class="myCheck sub1" id="4" name="Ques_1" value="D1" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn1" name="Ques_1">
+            Clear
+          </button>
+        </div>
+      </div>
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <!-- <div class="Ques_div shortQues"> -->
+          <p class="Ques">2: Who is the developer of this quiz?</p>
+          <!-- </div> -->
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Google</p>
+          <p class="Option">B: Shoogle</p>
+          <p class="Option">C: You</p>
+          <p class="Option">D: Saransh Lakra</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" id="5" name="Ques_2" value="A2" />
+          <input type="radio" class="myCheck sub" id="6" name="Ques_2" value="B2" />
+          <input type="radio" class="myCheck sub" id="7" name="Ques_2" value="C2" />
+          <input type="radio" class="myCheck sub" id="8" name="Ques_2" value="D2" />
+        </div>
+
+        <div>
+          <button class="clear_btn" id="clear_btn2" name="Ques_2">
+            Clear
+          </button>
+        </div>
+      </div>
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <p class="Ques">3: Who was the first Indian woman in Space?</p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Kalpana Chawla</p>
+          <p class="Option">B: Sunita Williams</p>
+          <p class="Option">C: Koneru Humpy</p>
+          <p class="Option">D: None of the above</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" id="5" name="Ques_3" value="A3" />
+          <input type="radio" class="myCheck sub" id="6" name="Ques_3" value="B3" />
+          <input type="radio" class="myCheck sub" id="7" name="Ques_3" value="C3" />
+          <input type="radio" class="myCheck sub" id="8" name="Ques_3" value="D3" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn3">Clear</button>
+        </div>
+      </div>
+
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <p class="Ques">4: Who was the first Indian in space?</p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Vikram Ambalal</p>
+          <p class="Option">B: Ravish Malhotra</p>
+          <p class="Option">C: Rakesh Sharma</p>
+          <p class="Option">D: Nagapathi Bhat</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_4" value="A4" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_4" value="B4" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_4" value="C4" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_4" value="D4" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn4">Clear</button>
+        </div>
+      </div>
+
+      <div class="Ques_div longQues">
+        <div class="Div_new_question">
+          <p class="Ques">
+            5: Who was the first Man to Climb Mount Everest Without Oxygen?
+          </p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Junko Tabei</p>
+          <p class="Option">B: Reinhold Messner</p>
+          <p class="Option">C: Peter Habeler</p>
+          <p class="Option">D: Phu Dorji</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_5" value="A5" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_5" value="B5" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_5" value="C5" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_5" value="D5" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn5">Clear</button>
+        </div>
+      </div>
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <p class="Ques">6: Who built the Jama Masjid?</p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Jahangir</p>
+          <p class="Option">B: Akbar</p>
+          <p class="Option">C: Imam Bukhari</p>
+          <p class="Option">D: Shah Jahan</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_6" value="A6" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_6" value="B6" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_6" value="C6" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_6" value="D6" />
+        </div>
+
+        <div>
+          <button class="clear_btn" id="clear_btn6">Clear</button>
+        </div>
+      </div>
+      <div class="Ques_div longQues">
+        <div class="Div_new_question">
+          <p class="Ques">
+            7: Who was the first Indian Scientist to win a Nobel Prize?
+          </p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: CV Raman</p>
+          <p class="Option">B: Amartya Sen</p>
+          <p class="Option">C: Hargobind Khorana</p>
+          <p class="Option">D: Homi J. Bhabha</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_7" value="A7" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_7" value="B7" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_7" value="C7" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_7" value="D7" />
+        </div>
+
+        <div>
+          <button class="clear_btn" id="clear_btn7">Clear</button>
+        </div>
+      </div>
+      <div class="Ques_div">
+        <div class="Div_new_question">
+          <p class="Ques">8: Who is the first Indian to win a Nobel Prize?</p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: CV Raman</p>
+          <p class="Option">B: Rabindranath Tagore</p>
+          <p class="Option">C: Mother Theresa</p>
+          <p class="Option">D: Hargobind Khorana</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_8" value="A8" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_8" value="B8" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_8" value="C8" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_8" value="D8" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn8">Clear</button>
+        </div>
+      </div>
+      <div class="Ques_div longQues">
+        <div class="Div_new_question">
+          <p class="Ques">
+            9: Who was the first Indian woman to win the Miss World Title?
+          </p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Aishwarya Rai</p>
+          <p class="Option">B: Sushmita Sen</p>
+          <p class="Option">C: Reita Faria</p>
+          <p class="Option">D: Diya Mirza</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_9" value="A9" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_9" value="B9" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_9" value="C9" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_9" value="D9" />
+        </div>
+        <div>
+          <button class="clear_btn" id="clear_btn9">Clear</button>
+        </div>
+      </div>
+      <div class="Ques_div longQues">
+        <div class="Div_new_question">
+          <p class="Ques">
+            10: Who was the first Indian to win the Booker Prize?
+          </p>
+        </div>
+        <div class="Div_new_option">
+          <p class="Option">A: Dhan Gopal Mukerji</p>
+          <p class="Option">B: Arundhati Roy</p>
+          <p class="Option">C: Nirad C. Chaudhuri</p>
+          <p class="Option">D: Aravind Adiga</p>
+        </div>
+        <div class="checkBox_div">
+          <input type="radio" class="myCheck sub" class="option_ID" id="5" name="Ques_10" value="A10" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="6" name="Ques_10" value="B10" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="7" name="Ques_10" value="C10" />
+          <input type="radio" class="myCheck sub" class="option_ID" id="8" name="Ques_10" value="D10" />
+        </div>
+
+        <div>
+          <button class="clear_btn" id="clear_btn10">Clear</button>
+
+          <!-- <div class="Result_div"> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <button id="submitQuiz">Submit Quiz</button>
+    </div>
+  </div>
+  <div id="detailsDiv">
+    <h2 id="quizInst">Quiz Instructions</h2>
+    <h3 class="Instructions">1. There are 10 G.K questions in this quiz</h3>
+    <h3 class="Instructions">2. Each question is of 1 mark</h3>
+    <h3 class="Instructions">
+      3. There is 0.25 marks negative marking for every wrong answer
+    </h3>
+    <h3 class="Instructions">
+      4. You will get your result just after you submit the quiz
+    </h3>
+    <h3 class="Instructions">
+      5. This quiz will be submitted automatically after 30 seconds
+    </h3>
+    <button id="start">Start Quiz</button>
+  </div>
+  <div class="DivLower">
+    <div class="login_div">
+      <p id="loginID">Login:</p>
+      <input type="text" placeholder="Candidate ID.." id="idBox" />
+      <input type="password" placeholder="Password.." id="passwordBox" />
+      <input id="quizAccess" type="submit" value="Log In" />
+    </div>
+  </div>
+  <script src="newQuizMVC.js"></script>
+</body>
+
+</html>

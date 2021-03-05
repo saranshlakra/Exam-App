@@ -69,7 +69,6 @@ let controller = (function () {
           score = score - 0.25;
         }
 
-      console.log(score);
       return score;
     },
     answerSheet,
@@ -78,8 +77,8 @@ let controller = (function () {
       updatedScore = controller.checkAnswer();
       html = '<p id="Score">You scored %____% out of 10.</p>';
       newhtml = html.replace("%____%", updatedScore);
-      console.log(updatedScore);
-      console.log(newhtml);
+      // console.log(updatedScore);
+      // console.log(newhtml);
 
       document
         .querySelector("#Result_div")
@@ -100,10 +99,12 @@ let model = (function (ctrl, view) {
   let getAccess = ctrl.checkUser;
   let startQuiz = view.showQuiz;
   let checkAns = ctrl.checkAnswer;
+  // let startTimer = ctrl.timer;
 
   let setupEventListner = function () {
     document.querySelector("#quizAccess").addEventListener("click", getAccess);
     document.querySelector("#start").addEventListener("click", startQuiz);
+    document.querySelector("#start").addEventListener("click", timer);
     document.querySelector("#submitQuiz").addEventListener("click", submit);
     document.querySelector("#submitQuiz").addEventListener("click", checkAns);
     document.querySelector("#Exit").addEventListener("click", exit);
@@ -138,6 +139,35 @@ let model = (function (ctrl, view) {
     document
       .querySelector("#clear_btn10")
       .addEventListener("click", clearResponse.bind(null, "Ques_10"));
+  };
+
+  var timer = function () {
+    var counter = 0;
+    var timeLeft = 30;
+
+    var convertSeconds = function (seconds) {
+      var min = Math.floor(seconds / 60);
+      var sec = seconds % 60;
+      function twoDigits(n) {
+        return n <= 9 ? "0" + n : n;
+      }
+      var minLeft = twoDigits(min);
+      var secLeft = twoDigits(sec);
+      return minLeft + ":" + secLeft;
+    };
+    // console.log(convertSeconds(90)); // Total Time 90secs = 1.5min
+
+    let showTime = function () {
+      counter++;
+      var newTimeLeft = convertSeconds(timeLeft - counter);
+      document.getElementById("Timer").textContent = newTimeLeft;
+
+      if (newTimeLeft === "00:00") {
+        submit();
+        clearInterval(interval);
+      }
+    };
+    var interval = setInterval(showTime, 1000);
   };
 
   function clearResponse(Ques) {

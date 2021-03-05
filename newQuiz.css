@@ -42,8 +42,8 @@
 }
 
 #Timer {
-  font-size: small;
-  margin: 8px;
+  font-size: x-large;
+  transform: translate(2vw, 1.6vh);
   color: red;
 }
 
@@ -375,9 +375,9 @@ input[type="password"]:hover {
   }
 
   #Timer {
-    font-size: 12px;
-    margin-left: 15px;
-    margin-top: 2px;
+    font-size: x-large;
+    transform: translate(3.5vw, 1.6vh);
+    color: red;
   }
 
   .Ques_div {

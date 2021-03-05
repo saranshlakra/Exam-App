@@ -54,7 +54,7 @@ let controller = (function () {
         document.querySelector(".DivLower").style.display = "none";
       } else {
         alert("Invalid");
-        console.log(nameID, password);
+        // console.log(nameID, password);
       }
     },
     checkAnswer: function () {

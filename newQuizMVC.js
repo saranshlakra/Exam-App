@@ -144,7 +144,7 @@ let model = (function (ctrl, view) {
 
   var timer = function () {
     var counter = 0;
-    var timeLeft = 10;
+    var timeLeft = 60;
 
     var convertSeconds = function (seconds) {
       var min = Math.floor(seconds / 60);

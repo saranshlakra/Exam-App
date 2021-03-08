@@ -140,10 +140,11 @@ let model = (function (ctrl, view) {
       .querySelector("#clear_btn10")
       .addEventListener("click", clearResponse.bind(null, "Ques_10"));
   };
+  var interval;
 
   var timer = function () {
     var counter = 0;
-    var timeLeft = 30;
+    var timeLeft = 10;
 
     var convertSeconds = function (seconds) {
       var min = Math.floor(seconds / 60);
@@ -167,7 +168,7 @@ let model = (function (ctrl, view) {
         clearInterval(interval);
       }
     };
-    var interval = setInterval(showTime, 1000);
+    interval = setInterval(showTime, 1000);
   };
 
   function clearResponse(Ques) {
@@ -186,6 +187,7 @@ let model = (function (ctrl, view) {
         }
       }
     }
+    clearInterval(interval);
     view.showResult();
     ctrl.addScore();
   };

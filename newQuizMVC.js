@@ -54,7 +54,6 @@ let controller = (function () {
         document.querySelector(".DivLower").style.display = "none";
       } else {
         alert("Invalid");
-        // console.log(nameID, password);
       }
     },
     checkAnswer: function () {
@@ -77,8 +76,6 @@ let controller = (function () {
       updatedScore = controller.checkAnswer();
       html = '<p id="Score">You scored %____% out of 10.</p>';
       newhtml = html.replace("%____%", updatedScore);
-      // console.log(updatedScore);
-      // console.log(newhtml);
 
       document
         .querySelector("#Result_div")
